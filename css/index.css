@@ -1,8 +1,4 @@
-/* -- -- -- */
-
-/* Meyerweb HTML5 Reset */ {
-
-/* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -16,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -27,10 +23,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
-
-article, aside, details, figcaption, figure,
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -54,8 +48,7 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-
-{
+* {
     box-sizing: border-box;
 }
 
@@ -69,246 +62,228 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
+.container {
+    width: 880px;
+    margin: auto;
 }
 
-/* -- -Start - -- */
-
-/* Desktop Code Version */
-
-@media (min-width: 801px) {
-
-body {
-	margin: 0 5%;
-}
+/* Header Styles */
 
 header {
-	display: flex;
-  flex-wrap: wrap;
-	justify-content: space-between;
-	padding-top: 2.5%;
+    width: 100%;
+    display: flex;
 }
 
 header nav {
-	width: 75%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+    margin-top: 40px; 
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
 }
 
 header nav a {
-	text-decoration: none;
-	color: #CECECE;
-	font-size: 100%;
-	font-weight: bold;
+    text-decoration: none;
+    color: #b0b0b0;
 }
 
-#main-banner {
-	border-bottom: 1px solid black;
-	display: flex;
-	justify-content: space-between;
-	padding-bottom: 5%;
-	margin-top: 5%;
-	margin-bottom: 5%;
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
 }
 
-#main-banner section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-left: 8%;
+header .logo {
+    margin: 28px 0 0 91px;
 }
 
-#main-banner section h1 {
-	font-size: 6.5em;
-	text-align: center;
+/* Call To Action (CTA) Styles */
+
+.cta {
+    display: flex;
+    margin-top: 72px;
+    justify-content: flex-end;
 }
 
-#main-banner section button {
-	background-color: white;
-	border: .5px solid black;
-	padding: 0 10%;
-	font-size: 1em;
-	font-family: 'Titillium Web';
+.cta .cta-text {
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 82px 0 0;
 }
 
-#main-banner img {
-	width: 40%;
-	height: 40%;
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 16px;
+    background: white;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
-#row-1 {
-	display: flex;
-	margin-bottom: 5%;
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
 }
 
-.row-1-content h2 {
-	font-size: 1em;
+/* Main Content Styles */
+
+.main-content {
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 75px 0 35px 0;
+   padding: 35px 0;
+   font-size: 16px;
+   line-height: 18px;
 }
 
-.row-1-content p {
-	font-size: 1em;
+.main-content .top-content {
+    display: flex;
 }
 
-.middle-img {
-	width: 100%;
-	margin-bottom: 5%;
+.main-content .middle-img {
+    display: block;
+    margin: 30px auto;
 }
 
-#row-2 {
-	border-bottom: 1px solid black;
-	display: flex;
-	padding-bottom: 5%;
-	margin-bottom: 3.5%;
+.main-content .bottom-content {
+    display: flex;
 }
 
-.row-2-content h2 {
-	font-size: 1em;
+.main-content .bottom-content p {
+    padding-right: 20px;
 }
 
-.row-2-content p {
-	font-size: 1em;
+/* Contact Styles */
+
+.contact p {
+    margin: 15px 0;
 }
 
-footer h3, address, p {
-	font-size: 1em;
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    margin: 40px 0 20px;
 }
 
-footer p {
-	text-align: center;
-	margin-top: 5%;
-	padding-bottom: 10%;
-}
-}
-
-/* Tablet Code Version */
-
+/* Tablet */
 @media (max-width: 800px) {
 
-  body {
-    margin: 0 1%;
-  }
-
-  header {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .logo {
-    width:25%;
-    padding-top: 10px;
-    padding-bottom: 0;
-  }
-
-  header nav{
-    width: 100%;
-    font-size: 13px;
-    padding-top: 25px;
-    padding-bottom: 30px;
-    margin: 0 5px 5px 0;
-  }
-
-  #header-image {
-    display: none;
-  }
-
-  #main-banner {
-    justify-content: center;
-  }
-
-  #main-banner section h1 {
-    font-size: 60px;
+    .container {
+        width: 100%;
     }
 
-  #main-banner section {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 20px;
-  }
+    header {
+        flex-wrap: wrap;
+    }
+  
+    header nav {
+        width: 768px;
+        padding: 0 30px;
+    }
 
-  #main-banner section button {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
+    header .logo {
+        order: -1;
+        display: block;
+        margin: 30px auto 0;
+    }
 
-  #main-banner {
-    border-bottom: 1px solid black;
-  }
+    .cta {
+        justify-content: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0;
+    }
 
-  #row-1, #row-2 {
-    font-size: 13px;
-    font-weight: bold;
-  }
+    .cta img {
+        display: none;
+    }
 
-  .row-1-content, .row-2-content {
-    padding: 8px;
-  }
+    .main-content .middle-img {
+       width: 100%;
+    }
 
-  #row-2 {
-    border-bottom: 1px solid black;
-  }
+    .main-content {
+       margin: 75px 20px 35px;
+    }
 
-  footer p {
-    font-size: 13px;
-  }
+    .text-content {
+        margin: 0 10px;
+    }
 
+    .contact {
+        margin: 0 30px;
+    }
 }
 
-/* Mobile Code Version */
-
+/* Phone */
 @media (max-width: 500px) {
 
-  body {
-    margin: 0;
-  }
+    header {
+        justify-content: center;
+    }
 
-  .logo {
-    width: 35%;
-  }
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
 
-   header nav {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 15px;
-  }
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+    }
 
-  header nav a {
-    width: 500px;
-    text-align: center;
-    padding: 10px 0;
-    border-top: 1px solid grey;
-    border-bottom: .5px solid grey;
-  }
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
 
-  header nav a:first-child {
-    border-top:1.5px solid grey;
-  }
+    header nav a:hover {
+        background: gray;
+    }
 
-  header nav a:last-child {
-    border-bottom: 1.5px solid grey;
-  }
+    header .logo {
+        margin: 20px 0;
+    }
 
-  #row-1, #row-2 {
-    flex-wrap: wrap;
-  }
+    .cta {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
 
-  .row-1-content, .row-2-content {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+    .cta img {
+        max-width: 80%;
+    }
 
-  #row-2 {
-	border-bottom: 1px solid black;
-  }
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
 
-  #main-banner {
-    border-bottom: 1px solid black;
-  }
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+
+    .text-content {
+        margin: 0;
+    }
+
+    .contact {
+        margin: 20px;
+    }
 }
-
-/* -- - Stop - -- */
-
-/* -- - Mistakes - -- */
-/* Unable to move Logo to top of page during Mobile page loadout. */
-/* Unable to center copyright sentence at bottom of page during Mobile page loadout. */
