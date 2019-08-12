@@ -63,227 +63,369 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
 .container {
-    width: 880px;
-    margin: auto;
+	width: 80%;
+	margin: 30px 10% ;
+}
+html h4 {
+	font-size: 1.25em;
 }
 
-/* Header Styles */
-
-header {
-    width: 100%;
-    display: flex;
+.container header {
+	display: flex; 
+	justify-content: space-evenly;
+	align-content: center;
+    align-items: center;
+}
+.container header nav {
+	display: flex;
+	justify-content: space-between; 
+	align-content: center; 
+	width: 55%;
 }
 
-header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
-}
+.container header nav a {
+	text-decoration: none;
+	color: grey;
+  }
 
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
-}
 
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
-}
-
-header .logo {
-    margin: 28px 0 0 91px;
-}
-
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
+.container .firstHalf {
+	border-bottom: 1px solid black;
+	padding: 0% 0% 10%;
+	display: flex;
+	align-items: center;
     justify-content: flex-end;
+    width: 80%;
+    margin: 10% 10% 10%;
+
 }
 
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
+.container .firstSection {
+	display: flex;
+	flex-direction: column; 
+	justify-content: center;
+	align-items: center;
+	width: 49.5%;
+	
+	}
+
+.container .firstSection h1 {
+	font-size: 75px;
+	display: flex;
+	
+}
+
+.container .image1 {
+	width: 49.5%;
+}
+
+.container .firstSection button {
+	background: white;
+	color: black;
+	border: 1px solid black;
+	width: 150px;
+	height: 30px;
+	font-size: 1em;
+}
+
+.container .featAbout {
+	display: flex;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.container .featuresSection {
+	display: flex;
+	flex-direction: column;
+	width: 49.5%;
+	padding: 50px 0;
+}
+
+.container .aboutSection {
+	display: flex;
+	flex-direction: column;
+	width: 49.5%;
+	padding: 50px 0;
+}
+.container .image2 {
     display: flex;
     justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
 }
 
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
+.container .servicesSection {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	padding: 50px 0;
 }
 
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
+.container .productSection {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	padding: 50px 0;
 }
 
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+.container .visionSection {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	padding: 50px 0;
 }
 
-.main-content .top-content {
+.container .threeSections {
+	border-bottom: 1px solid black;
     display: flex;
+    width: 80%;
+    margin: 0 10%;
 }
 
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
+.container footer {
+    width: 80%;
+    margin: 0 10%;
 }
 
-.main-content .bottom-content {
-    display: flex;
+.container footer .contactSection {
+	padding-top: 50px;
+    display: flex;  
 }
 
-.main-content .bottom-content p {
-    padding-right: 20px;
+.container footer address {
+	padding: 20px 0;
 }
 
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
+.container footer div {
+	padding-bottom: 20px;
 }
 
-/* Footer Styles */
-
-footer {
-    text-align: center;
-    margin: 40px 0 20px;
+.container footer .copyrightSection {
+	text-align: center;
+	padding: 50px 0;
 }
 
-/* Tablet */
-@media (max-width: 800px) {
+.container .servicesSection2 h2 {
+	font-size: 30px;
+}
 
-    .container {
-        width: 100%;
-    }
+.container .servicesSection2 {
+	border-bottom: 1px solid black;
+	padding: 30px 0;
+}
 
-    header {
-        flex-wrap: wrap;
-    }
-  
-    header nav {
-        width: 768px;
-        padding: 0 30px;
-    }
+.container .boxes {
+	border-bottom: 2px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px 0;
+	justify-content: space-around;
+	align-content: space-between;
+}
 
-    header .logo {
-        order: -1;
-        display: block;
-        margin: 30px auto 0;
-    }
+.container .boxes button {
+	width: 175px;
+	background-color: white;
+	height: 40px;
+	margin: 20px 0;
+	border-radius: 8px;
+	text-decoration: none;
+}
 
-    .cta {
-        justify-content: center;
+.container .boxes .digitalDesign {
+	border: 1px solid black;
+	width: 45%;
+	margin-bottom: 30px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.container .boxes .uiux {
+	border: 1px solid black;
+	width: 45%;
+	margin-bottom: 30px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.container .boxes .digitalMarketing {
+	border: 1px solid black;
+	width: 45%;
+	margin-bottom: 30px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.container .boxes .webDev {
+	border: 1px solid black;
+	width: 45%;
+	margin-bottom: 30px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.container .boxes .ios {
+	border: 1px solid black;
+	width: 45%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.container .boxes .android {
+	border: 1px solid black;
+	width: 45%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.container .factsDiv {
+	display: flex;
+	padding-top: 30px;
+}
+
+.container .factsDiv .factsSection {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	margin-right: 50px;
+	margin-left: 20px;
+}
+
+.container .factsDiv .image {
+	display: flex;
+	width: 45%;
+}
+
+.container .factsDiv .factsSection ul {
+	margin: 10px;
+}
+
+@media(max-width: 800px) {
+    html {
+        margin: 10%;
     }
     
-    .cta .cta-text {
+    .container header .logo {
+        margin: 5%;
+    }
+    .container header {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .container header nav {
+        margin-top: 5%;
+        width: 100%;
         margin: 0;
     }
 
-    .cta img {
+    .container .firstHalf {
+        width: 100%;
+        margin: 0;
+    }
+    .container .image1{
         display: none;
     }
 
-    .main-content .middle-img {
-       width: 100%;
+    .container .firstSection {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        }
+    
+    .container .middle-img {
+        width: 100%;
+        height: auto;
     }
 
-    .main-content {
-       margin: 75px 20px 35px;
+    .container .featAbout {
+        width: 100%;
+        margin: 0;
     }
 
-    .text-content {
-        margin: 0 10px;
+    .container .threeSections {
+        width: 100%;
+        margin: 0;
     }
-
-    .contact {
-        margin: 0 30px;
+    
+    .container footer {
+        width: 100%;
+        margin: 0;
     }
 }
 
-/* Phone */
-@media (max-width: 500px) {
-
-    header {
+@media(max-width: 500px) {
+    .container nav {
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
     }
 
-    header nav {
-        width: 100%;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
-
-    header nav a {
-        width: 100%;
-        display: block;
+    .container nav a {
+        border-bottom: 1px solid grey;
+        width: 100%; 
         text-align: center;
-        padding: 20px 0;
-        font-size: 20px;
-        border-bottom: 1px solid gray;
-    }
-
-    header nav a:first-child {
-        border-top: 1px solid gray;
-    }
-
-    header nav a:hover {
-        background: gray;
-    }
-
-    header .logo {
-        margin: 20px 0;
-    }
-
-    .cta {
-        margin-top: 50px;
-        flex-flow: column;
-        align-items: center;
-    }
-
-    .cta img {
-        max-width: 80%;
-    }
-
-    .main-content .top-content {
-        justify-content: space-around;
-        flex-direction: column;
-        height: 300px;
-    }
-
-    .main-content .bottom-content {
-        flex-wrap: wrap;
-        align-content: space-between;
-        height: 440px;
-    }
-
-    .text-content {
+        padding: 20px;
         margin: 0;
     }
 
-    .contact {
-        margin: 20px;
+    .container .firstHalf {
+        padding: 10% 0;
+    }
+
+    .container .featAbout {
+        flex-direction: column;
+    }
+
+    .container .featuresSection {
+        width: 100%;
+    }
+
+    .container .aboutSection {
+        width: 100%;
+    }
+
+    .container .threeSections {
+        flex-direction: column;
+    }
+
+    .container .servicesSection {
+        width: 100%;
+    }
+
+    .container .productSection {
+        width: 100%;
+    }
+
+    .container .visionSection {
+        width: 100%;
     }
 }
